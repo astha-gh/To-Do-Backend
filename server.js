@@ -37,9 +37,7 @@ app.use('/api/activity-logs', activityLogRoutes);
 
 app.set("io", io);
 
-app.get('/', (req, res) => {
-    res.send('API is working!');
-});
+
   
 
 server.listen(PORT, () => {
