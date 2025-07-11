@@ -37,7 +37,9 @@ app.use('/api/activity-logs', activityLogRoutes);
 
 app.set("io", io);
 
-
+app.get('/' , (req , res) => {
+    res.send("App Loaded");
+})
   
 
 server.listen(PORT, () => {
