@@ -12,13 +12,13 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:3000", "https://realtime-todo-6b9279.netlify.app"],
+        origin: "*",
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
 })
 
 app.use(cors({
-    origin: ["http://localhost:3000", "https://realtime-todo-6b9279.netlify.app"],
+    origin: "*",
     credentials: true
 }));
 
